@@ -64,10 +64,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp TILDE        &kp N1  &kp N2  &kp N3            &kp N4  &kp N5                            &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8     &kp N9         &kp N0            &kp PIPE
-&mo 2            &trans  &trans  &trans            &trans  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp RIGHT_SHIFT  &trans  &trans  &trans            &trans  &trans  &trans                    &mmv MOVE_DOWN                   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &kp TILDE         &kp RIGHT_SHIFT
-                                 &kp LANG_HANGEUL  &trans  &trans                                                             &trans    &kp DEL   &mo 2
+&kp GRAVE        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                            &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8     &kp N9         &kp N0            &kp PIPE
+&mo 2            &trans  &trans  &trans  &trans  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp RIGHT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_DOWN                   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &kp RIGHT_ALT     &kp RIGHT_SHIFT
+                                 &trans  &trans  &trans                                                             &trans    &kp DEL   &mo 2
             >;
 
             sensor-bindings = <&scroll_encoder>;
