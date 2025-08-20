@@ -92,7 +92,7 @@ layers:
   - PgDn
   - '~'
   - $$mdi:apple-keyboard-shift$$
-  - LANG1
+  - LANG HANGEUL
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {type: held alternate}
