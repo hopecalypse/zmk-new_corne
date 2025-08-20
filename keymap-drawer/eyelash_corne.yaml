@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   NUMBER:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -92,12 +92,12 @@ layers:
   - PgDn
   - '~'
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - LANG1
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: INS, type: held alternate}
+  - {type: held alternate}
   - $$mdi:backspace-reverse-outline$$
-  - LANG1
+  - SYMBOL
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
