@@ -148,7 +148,7 @@ layers:
   - '4'
   - {type: held}
   '4':
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_OFF'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
