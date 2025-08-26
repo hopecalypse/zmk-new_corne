@@ -99,7 +99,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - SYMBOL
   SYMBOL:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - LEFT WIN
   - F1
   - F2
   - F3
