@@ -75,10 +75,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp LEFT_WIN  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                   &none         &kp F6      &kp F7  &kp F8  &kp F10  &kp F11  &kp F12
-&trans        &trans  &trans  &trans  &trans  &trans            &none  &none  &none  &kp K_MUTE  &trans  &trans  &trans   &trans   &trans
-&trans        &trans  &trans  &trans  &trans  &trans  &trans           &none         &trans      &trans  &trans  &trans   &trans   &trans
-                              &trans  &trans  &trans                                 &trans      &mo 3   &trans
+&kp LEFT_WIN  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                   &none         &kp F6  &kp F7  &kp F8  &kp F10  &kp F11  &kp F12
+&trans        &trans  &trans  &trans  &trans  &trans            &none  &none  &none  &trans  &trans  &trans  &trans   &trans   &trans
+&trans        &trans  &trans  &trans  &trans  &trans  &trans           &none         &trans  &trans  &trans  &trans   &trans   &trans
+                              &trans  &trans  &trans                                 &trans  &mo 3   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -86,10 +86,10 @@
 
         layer_4 {
             bindings = <
-&trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans         &trans         &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans         &trans  &trans                                    &trans  &trans  &trans
+&trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &trans  &trans                    &trans          &kp K_MUTE  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &trans  &trans            &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans         &trans         &trans  &trans  &trans            &trans          &trans      &trans  &trans  &trans  &trans  &trans
+                                      &trans         &trans  &trans                                    &trans      &trans  &trans
             >;
         };
     };
