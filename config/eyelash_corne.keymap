@@ -4,6 +4,8 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -112,10 +114,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp LWIN  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &trans  &trans                             &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOLUME_UP  &trans  &rgb_ug RGB_TOG            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &bl BL_DEC    &bl BL_TOG    &bl BL_INC       &trans  &rgb_ug RGB_EFF  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans           &trans  &trans                                             &trans  &trans  &trans
             >;
         };
     };
