@@ -36,14 +36,15 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        lt_Faster: lt_Faster {
+        lt_RALT: lt_RALT {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_FASTER";
+            label = "LT_RALT";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <105>;
+            tapping-term-ms = <150>;
             flavor = "balanced";
+            retro-tap;
         };
 
         lt_Space: lt_Space {
@@ -52,8 +53,9 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <110>;
+            tapping-term-ms = <160>;
             flavor = "tap-preferred";
+            retro-tap;
         };
     };
 
@@ -86,10 +88,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R     &kp T                              &none         &kp Y              &kp U          &kp I      &kp O    &kp P     &kp EQUAL
-&kp TAB     &kp A  &kp S  &kp D      &kp F     &kp G                       &none  &none  &none  &kp H              &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B              &none           &none         &kp N              &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                          &kp LCTRL  &kp LALT  &lt_Space 1 SPACE                                &lt_Faster 1 RALT  &kp BACKSPACE  &kp ENTER
+&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R     &kp T                              &none         &kp Y            &kp U          &kp I      &kp O    &kp P     &kp EQUAL
+&kp TAB     &kp A  &kp S  &kp D      &kp F     &kp G                       &none  &none  &none  &kp H            &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B              &none           &none         &kp N            &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+                          &kp LCTRL  &kp LALT  &lt_Space 1 SPACE                                &lt_RALT 1 RALT  &kp BACKSPACE  &kp ENTER
             >;
         };
 
