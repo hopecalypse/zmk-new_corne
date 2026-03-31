@@ -117,8 +117,17 @@
             bindings = <
 &kp LWIN  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &trans          &trans  &trans  &trans  &bt BT_CLR_ALL  &trans  &trans
 &trans    &trans        &trans        &trans        &trans             &trans                     &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans
-&trans    &trans        &trans        &trans        &trans             &trans           &trans            &trans          &trans  &trans  &trans  &trans          &trans  &trans
+&trans    &trans        &trans        &trans        &trans             &trans           &trans            &trans          &trans  &trans  &trans  &trans          &trans  &mo 4
                                       &trans        &trans             &trans                                             &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp LWIN  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
